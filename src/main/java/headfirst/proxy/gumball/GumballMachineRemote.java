@@ -1,9 +1,11 @@
 package headfirst.proxy.gumball;
 
 import java.rmi.*;
- 
+
 public interface GumballMachineRemote extends Remote {
-	public int getCount() throws RemoteException;
-	public String getLocation() throws RemoteException;
-	public State getState() throws RemoteException;
+    int getCount() throws RemoteException;
+
+    String getLocation() throws RemoteException;
+
+    State getState() throws RemoteException;
 }
